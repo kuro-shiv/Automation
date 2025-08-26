@@ -27,7 +27,7 @@ We cover everything from setting up Selenium to building real-world automation p
 |----------|-------|--------|
 | Blog 1 | What is Automation Testing & Why Selenium? |  [`01_Initialization/`](https://aigen023.blogspot.com/2025/07/blog-1-what-is-automation-testing-why.html) |
 | Blog 2 | Setting Up Environment | [`02_env_setup/`](https://aigen023.blogspot.com/2025/07/getting-started-with-python-for.html) |
-| Blog 3 | Python Basics for Selenium | [`03_python_basics/`]() |
+| Blog 3 | Python Basics for Selenium | [`03_python_basics/`](https://aigen023.blogspot.com/2025/08/blog-post.html) |
 | Blog 4 | Mastering Element Locators | `04_element_locators/` |
 | Blog 5 | Interacting with Elements | `05_element_interaction/` |
 | Blog 6 | Navigation and Smart Waits | `06_navigation_waits/` |
