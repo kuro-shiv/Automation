@@ -27,6 +27,8 @@ We cover everything from setting up Selenium to building real-world automation p
 |----------|-------|--------|
 | Blog 1 | What is Automation Testing & Why Selenium? |  [`01_Initialization/`](https://aigen023.blogspot.com/2025/07/blog-1-what-is-automation-testing-why.html) |
 | Blog 2 | Setting Up Environment | [`02_env_setup/`](https://aigen023.blogspot.com/2025/07/getting-started-with-python-for.html) |
+| Blog 1 | What is Automation Testing & Why Selenium? | https://aigen023.blogspot.com/2025/07/blog-1-what-is-automation-testing-why.html |
+| Blog 2 | Setting Up Environment | https://aigen023.blogspot.com/2025/07/getting-started-with-python-for.html |
 | Blog 3 | Python Basics for Selenium | `03_python_basics/` |
 | Blog 4 | Mastering Element Locators | `04_element_locators/` |
 | Blog 5 | Interacting with Elements | `05_element_interaction/` |
@@ -90,6 +92,8 @@ We’ll be using the following websites for practice, demo, and tutorials throug
   🔹 [My Blog - AIgen023](https://aigen023.blogspot.com/)
   
   🔹 [Selenium Official Docs](https://www.selenium.dev/)
+
+  🔹 [Web Form](https://www.selenium.dev/selenium/web/web-form.html)
 
 These platforms help in learning real-time use cases like:
 
