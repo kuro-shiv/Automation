@@ -1,126 +1,319 @@
 # 🧪 Automation with Selenium & Python 🚀
 
-Welcome to the official repository of the blog series:  
-**“Mastering Selenium Automation with Python — From Beginner to Pro”**
+A comprehensive Selenium-based test automation framework with Page Object Model pattern, built with Python and pytest.
 
-🔗 Blog: [Visit Blog](https://aigen023.blogspot.com/)  
-📘 Series Author: [Kuro Shiv](https://www.youtube.com/@kuro_ank023)  
-📂 Repo: [`Automation_Selenium_Python`](https://github.com/kuro-shiv/Automation_Selenium_Python)
+## 📋 Overview
 
----
+This framework provides a robust structure for automating web application testing using:
+- **Selenium WebDriver** - Web automation library
+- **pytest** - Testing framework
+- **Page Object Model** - Design pattern for maintainable tests
+- **webdriver-manager** - Automatic browser driver management
 
-## 📌 About the Series
+## 🎯 Key Features
 
-This series is designed for:
-
-- Beginners looking to dive into test automation  
-- Python developers interested in browser automation  
-- QA engineers and tech enthusiasts  
-
-We cover everything from setting up Selenium to building real-world automation projects — step by step.
-
----
-
-## 🧑‍💻 Blog-to-Code Mapping
-
-| Blog Post | Title | Blog |
-|----------|-------|--------|
-| Blog 1 | What is Automation Testing & Why Selenium? |  [`01_Initialization/`](https://aigen023.blogspot.com/2025/07/blog-1-what-is-automation-testing-why.html) |
-| Blog 2 | Setting Up Environment | [`02_env_setup/`](https://aigen023.blogspot.com/2025/07/getting-started-with-python-for.html) |
-| Blog 3 | Intro to selenium and webdriver | [`03_python_basics/`](https://aigen023.blogspot.com/2025/08/blog-post.html) |
-| Blog 4 | Mastering Element Locators | `04_element_locators/` |
-| Blog 5 | Interacting with Elements | `05_element_interaction/` |
-| Blog 6 | Navigation and Smart Waits | `06_navigation_waits/` |
-| Blog 7 | Alerts, Popups, iFrames | `07_alerts_iframes_popups/` |
-| Blog 8 | Debugging with Screenshots | `08_screenshots_logging/` |
-| Blog 9 | ActionChains Usage | `09_actionchains/` |
-| Blog 10 | File Uploads & Downloads | `10_file_upload_download/` |
-| Blog 11 | Data-Driven Scripts | `11_data_driven/` |
-| Blog 12 | Login + Order Flow Project | `12_login_order_project/` |
-| Blog 13 | OOP + Structure | `13_oop_script_structure/` |
-| Blog 14 | Headless & Scheduling | `14_headless_scheduling/` |
-| Blog 15 | Final Project + GitHub | `15_final_project/` |
-
----
+✅ **Page Object Model** - Maintainable and scalable test architecture  
+✅ **Reusable Components** - Base test class, utilities, and configurations  
+✅ **Multiple Test Suites** - Login, dashboard, and negative test cases  
+✅ **Browser Compatibility** - Support for Chrome, Firefox, Edge, Safari  
+✅ **Screenshots & Logging** - Automatic failure screenshots and detailed logs  
+✅ **Easy Configuration** - Centralized config file for URLs and credentials  
+✅ **WebDriver Management** - Automatic driver download and management  
 
 ## ✅ Requirements
 
 - Python 3.8+
 - pip
 - Selenium
-- Browser WebDrivers (ChromeDriver, EdgeDriver)
+- Browser WebDrivers (ChromeDriver, EdgeDriver, etc.)
 - VS Code (optional but recommended)
 
-Install dependencies:
+### Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
----
 
-## ▶️ Getting Started
-
-- Clone this repo:
-
-```git clone https://github.com/kuro-shiv/Automation_Selenium_Python.git```
-
-```cd Automation_Selenium_Python```
-
-- Explore code in each folder as you follow the blog posts.
-
-- Run a sample script:
-  
-```python 02_env_setup/open_google.py```
+This will install:
+- **Selenium** - Web automation library
+- **pytest** - Testing framework
+- **webdriver-manager** - Automatic WebDriver management
 
 ---
 
-## 🧪 Testing Practice Sites
+## 🏗️ Project Structure
 
-We’ll be using the following websites for practice, demo, and tutorials throughout the blog and this repository:
-
-  🔹 [The Internet (Heroku)](https://the-internet.herokuapp.com/)
-  
-  🔹 [CosmoCode Playground](https://cosmocode.io/)
-  
-  🔹 [OrangeHRM Demo Login](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
-  
-  🔹 [FormSite Practice Form](https://fs2.formsite.com/meherpavan/form2/index.html?1537702596407)
-  
-  🔹 [SauceDemo Login Page](https://www.saucedemo.com/)
-  
-  🔹 [My Blog - AIgen023](https://aigen023.blogspot.com/)
-  
-  🔹 [Selenium Official Docs](https://www.selenium.dev/)
-
-  🔹 [Web Form](https://www.selenium.dev/selenium/web/web-form.html)
-
-These platforms help in learning real-time use cases like:
-
-- Login and authentication testing  
-- Forms and input handling  
-- Alerts, popups, modals, and iFrames  
-- File uploads and downloads  
-- Page navigation and interaction
+```
+Selenium_py/
+├── pages/
+│   └── login_page.py          # Page Object Model for login page
+├── test/
+│   ├── test_login.py          # Login functionality tests
+│   ├── test_dashboard.py       # Dashboard tests
+│   └── test_negative_cases.py  # Negative scenario tests
+├── utils/
+│   ├── base_test.py           # Base test class with setup/teardown
+│   └── config.py              # Configuration and constants
+├── requirements.txt           # Python dependencies
+├── run_tests.py               # Main test runner script
+└── README.md                  # This file
+```
 
 ---
 
-## 📷 Screenshots & Logs
-Screenshots of test runs and logging mechanisms are included in respective folders.
+## ▶️ Running Tests
 
-Learn how to debug failed tests using driver.save_screenshot() and the Python logging module.
+### Run All Tests
+```bash
+python run_tests.py
+```
+
+### Run Tests with Pytest
+```bash
+pytest test/ -v
+```
+
+### Run Specific Test File
+```bash
+pytest test/test_login.py -v
+```
+
+### Run Specific Test Case
+```bash
+pytest test/test_login.py::TestLogin::test_valid_login -v
+```
+
+### Run Tests with Output
+```bash
+pytest test/ -v -s
+```
 
 ---
 
-## 🏁 Final Project
-Check the 15_final_project/ folder to explore a real-world automation scenario:
+## 📁 Directory Details
 
-Login → Navigate to Product → Select → Checkout → Download Report → Email Summary
+### `pages/`
+**Page Object Model (POM) Classes** - Contains page classes that represent UI elements and actions.
 
-This project combines everything taught in the series into a complete use case.
+**Example:**
+```python
+class LoginPage:
+    def __init__(self, driver):
+        self.driver = driver
+    
+    def enter_username(self, username):
+        self.driver.find_element(*self.USERNAME).send_keys(username)
+    
+    def click_login(self):
+        self.driver.find_element(*self.LOGIN_BTN).click()
+```
+
+**Files:**
+- `login_page.py` - Login page elements and methods
+
+### `test/`
+**Test Cases** - Contains all test scenarios.
+
+**Files:**
+- `test_login.py` - Login functionality tests (valid credentials, UI elements)
+- `test_dashboard.py` - Dashboard tests after successful login
+- `test_negative_cases.py` - Negative scenarios (invalid login, error handling)
+
+### `utils/`
+**Utility Functions & Configuration** - Helper classes and settings.
+
+**Files:**
+- `base_test.py` - Base test class with WebDriver initialization and teardown
+- `config.py` - Test configuration, URLs, credentials, and constants
 
 ---
 
-## 📘 Follow the Series
-Start from Blog 1 and go step-by-step:
+## 🧪 Test Scenarios Covered
 
-🔗 Read on Blogger →
-https://aigen023.blogspot.com/search/label/selenium
+### Login Tests (`test_login.py`)
+- ✅ Valid login with correct credentials
+- ✅ Verify login page elements
+- ✅ Navigate to login page
+- ✅ Check page title and URL
+
+### Dashboard Tests (`test_dashboard.py`)
+- ✅ Dashboard loads after login
+- ✅ Verify dashboard elements
+- ✅ Navigation functionality
+- ✅ User session management
+
+### Negative Cases (`test_negative_cases.py`)
+- ✅ Login with invalid credentials
+- ✅ Error message validation
+- ✅ Empty field handling
+- ✅ Edge case scenarios
+
+---
+
+## 🔧 Configuration
+
+Edit `utils/config.py` to customize:
+- Base URL
+- Browser type
+- Test credentials
+- Timeouts
+- Wait times
+
+**Example:**
+```python
+BASE_URL = "https://opensource-demo.orangehrmlive.com/"
+BROWSER = "chrome"
+USERNAME = "Admin"
+PASSWORD = "admin123"
+IMPLICIT_WAIT = 10
+```
+
+---
+
+## 🌐 Testing Websites
+
+We use the following websites for practice and testing:
+
+- 🔹 [OrangeHRM Demo](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+- 🔹 [SauceDemo](https://www.saucedemo.com/)
+- 🔹 [The Internet (Heroku)](https://the-internet.herokuapp.com/)
+- 🔹 [Selenium Practice Form](https://www.selenium.dev/selenium/web/web-form.html)
+- 🔹 [FormSite Practice](https://fs2.formsite.com/meherpavan/form2/)
+
+These sites cover:
+- Login and authentication testing
+- Form handling and validation
+- Element interaction (click, type, submit)
+- Alerts, popups, and iFrames
+- File uploads and downloads
+
+---
+
+## 📸 Screenshots & Logging
+
+### Screenshots
+Automatic screenshots on test failure:
+```python
+driver.save_screenshot('screenshot.png')
+```
+
+Screenshots are saved to the project directory.
+
+### Logging
+Python logging is configured in `base_test.py`:
+```python
+import logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+```
+
+Use logging in tests:
+```python
+logger.info("Starting login test")
+logger.error("Login failed")
+```
+
+---
+
+## 🔄 Test Execution Flow
+
+1. **Setup** - Initialize WebDriver and navigate to base URL
+2. **Test Execution** - Execute test steps using Page Object methods
+3. **Assertion** - Verify expected results
+4. **Teardown** - Close browser and cleanup
+
+Example:
+```python
+def test_valid_login(self):
+    login_page = LoginPage(self.driver)
+    login_page.enter_username("Admin")
+    login_page.enter_password("admin123")
+    login_page.click_login()
+    
+    dashboard = DashboardPage(self.driver)
+    assert dashboard.is_dashboard_loaded()
+```
+
+---
+
+## 🐛 Debugging Tips
+
+1. **Use `time.sleep()`** for manual waits (not recommended for production):
+   ```python
+   import time
+   time.sleep(2)
+   ```
+
+2. **Use Explicit Waits** (recommended):
+   ```python
+   from selenium.webdriver.support.ui import WebDriverWait
+   WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+   ```
+
+3. **Take Screenshots**:
+   ```python
+   driver.save_screenshot('debug.png')
+   ```
+
+4. **Print Page Source**:
+   ```python
+   print(driver.page_source)
+   ```
+
+5. **Check WebDriver Logs**:
+   ```python
+   logs = driver.get_log('browser')
+   ```
+
+---
+
+## ✅ Best Practices
+
+- ✅ Use Page Object Model pattern
+- ✅ Avoid hardcoding values (use config.py)
+- ✅ Use explicit waits instead of implicit waits
+- ✅ Follow naming conventions for test methods
+- ✅ Keep tests independent and reusable
+- ✅ Log important test steps
+- ✅ Take screenshots on failures
+- ✅ Clean up resources in teardown
+
+---
+
+## 📚 Resources
+
+- [Selenium Python Documentation](https://www.selenium.dev/selenium/docs/api/py/)
+- [Pytest Documentation](https://docs.pytest.org/)
+- [WebDriver Manager](https://github.com/SergeyPirogov/webdriver_manager)
+- [Selenium Best Practices](https://www.selenium.dev/documentation/)
+
+---
+
+## 🎓 Learning Path
+
+1. Start with `utils/config.py` to understand configuration
+2. Review `utils/base_test.py` for WebDriver setup
+3. Check `pages/login_page.py` for Page Object pattern
+4. Study test files in `test/` folder
+5. Run tests and observe the execution
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+- Follow the Page Object Model pattern
+- Write clear test names
+- Add comments for complex logic
+- Ensure all tests pass
+- Update this README if adding new features
+
+---
+
+## 📄 License
+
+ISC License
+
+---
+
+**Happy Selenium Testing! 🎉**
