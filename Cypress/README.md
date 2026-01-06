@@ -1,6 +1,10 @@
-# 🌳 Cypress Test Automation Framework
+# 🌳 Cypress Test Automation Framework - Learning & Practice
 
-A modern end-to-end testing framework using Cypress for web application testing.
+**Personal Learning Project:** I'm learning and practicing end-to-end testing using Cypress. This framework contains examples and best practices for modern web application testing with JavaScript.
+
+---
+
+A modern, educational end-to-end testing framework using Cypress for web application testing.
 
 ## 📋 Overview
 

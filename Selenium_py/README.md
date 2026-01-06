@@ -1,6 +1,10 @@
-# 🧪 Automation with Selenium & Python 🚀
+# 🧪 Selenium Python Automation Framework - Learning & Practice
 
-A comprehensive Selenium-based test automation framework with Page Object Model pattern, built with Python and pytest.
+**Personal Learning Project:** I'm learning and practicing test automation using Selenium WebDriver with Python. This framework demonstrates modern testing practices, design patterns, and automation best practices.
+
+---
+
+A comprehensive, educational Selenium WebDriver-based test automation framework with Page Object Model pattern, built with Python and pytest.
 
 ## 📋 Overview
 
