@@ -7,3 +7,4 @@ Cypress.Commands .add('login',(usernmae ,password) => {
 
     cy.url().should('include', '/dashboard')
 })
+
